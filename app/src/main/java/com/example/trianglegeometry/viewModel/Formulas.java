@@ -15,13 +15,13 @@ public class Formulas {
 
         double[] result = new double[arraySize];
 
-        result[0] = 180/3.14 * ((Math.pow(firstSide, 2) +
+        result[0] = 180/3.14 * Math.acos(((Math.pow(firstSide, 2) +
                 Math.pow(thirdSide, 2) -
-                Math.pow(firstSide, 2)) / (2 * firstSide * thirdSide));
+                Math.pow(firstSide, 2)) / (2 * firstSide * thirdSide)));
 
-        result[1] = 180/3.14 * ((Math.pow(firstSide, 2) +
+        result[1] = 180/3.14 * Math.acos(((Math.pow(firstSide, 2) +
                 Math.pow(secondSide, 2) -
-                Math.pow(thirdSide, 2)) / (2 * firstSide * secondSide));
+                Math.pow(thirdSide, 2)) / (2 * firstSide * secondSide)));
 
         result[2] = 180 - (result[0] + result[1]);
 
@@ -136,5 +136,5 @@ public class Formulas {
             return "Равносторонним треугольник или правильный треугольник - все три стороны равны";
 
         return "Error (";
-    }+
+    }
 }
