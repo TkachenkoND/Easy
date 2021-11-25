@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TriangleGeometry</string>
+    <string name="a">Сторона а =</string>
+    <string name="b">Сторона b =</string>
+    <string name="c">Сторона с =</string>
+    <string name="res">Розрахувати</string>
+    <string name="str">Введіть розміри сторін трикутника</string>
+</resources>
